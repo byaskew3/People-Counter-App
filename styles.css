@@ -7,18 +7,22 @@ html {
 }
 
 body {
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Roboto', sans-serif;
 }
 
 header h1 {
     text-align: center;
-    color: #61968f;
+    font-weight: lighter;
+    color: rgba(66, 66, 66, 0.6);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(114, 114, 114), 0 0 0.2em rgb(0, 0, 0);
 }
 
 p {
     text-align: center;
+    font-weight: lighter;
 }
 
 button {
@@ -27,15 +31,18 @@ button {
     padding: 10px;
     border-radius: 3px;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
 }
 
 .container {
     max-width: 550px;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 100px;
     background-image: url('https://image.myanimelist.net/ui/gDEE1QGHMmMAOJRb4Q-ehqF7ckhcVAUyzogC6VP5vLRfZvPmxqZSesrY7To5I7-53wOJr0TYLPv5QfH-OHe9ok7ouNczVlD0xwnFDa-s2Xh9qyGOkto8Aw23g-9D4U7q');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 100px;
     border-radius: 5px;
 }
 
@@ -47,21 +54,39 @@ main .container {
 }
 
 .counter-el {
-    font-size: 72px;
+    margin-top: 100px;
+    font-size: 120px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(114, 114, 114), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .entry-el {
-    font-size: 48px;
+    font-size: 36px;
+    color: #fbfbfb;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(124, 124, 124), 0 0 0.2em rgb(178, 178, 182);
 }
 
 .increment-el {
-    background-color: green;
+    background-color: rgb(93, 189, 93);
+}
+
+.increment-el:hover {
+    background-color: rgb(56, 112, 56);
 }
 
 .decrement-el {
-    background-color: red;
+    background-color: rgb(179, 78, 78);
+}
+
+.decrement-el:hover {
+    background-color: rgb(109, 47, 47);
 }
 
 .save-el {
-    background-color: #0093E9;
+    background-color: #4b8cb3;
+}
+
+.save-el:hover {
+    background-color: #2d5168;
+
 }
