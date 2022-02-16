@@ -2,6 +2,66 @@
     margin: 0;
 }
 
-h1 {
-    border: 5px solid red;
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    color: #61968f;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+    background-image: url('https://image.myanimelist.net/ui/gDEE1QGHMmMAOJRb4Q-ehqF7ckhcVAUyzogC6VP5vLRfZvPmxqZSesrY7To5I7-53wOJr0TYLPv5QfH-OHe9ok7ouNczVlD0xwnFDa-s2Xh9qyGOkto8Aw23g-9D4U7q');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+main .container {
+    display: flex;
+    background: none;
+    justify-content: center;
+    gap: 5px;
+}
+
+.counter-el {
+    font-size: 72px;
+}
+
+.entry-el {
+    font-size: 48px;
+}
+
+.increment-el {
+    background-color: green;
+}
+
+.decrement-el {
+    background-color: red;
+}
+
+.save-el {
+    background-color: #0093E9;
 }
